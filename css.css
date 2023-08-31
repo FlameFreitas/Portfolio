@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+
+}
+
+.header {
+    background-color: lightgray;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.divs-facilidades {
+    width: 325px;
+
+}
+
+.estiloFooter {
+    opacity: 0.1;
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: baseline;
+    color: black;
+}
+
+.icones-sociais li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    line-height: 280%;
+    background: lightgray;
+    padding: 18px;
+    bottom: 0;
+
+}
+
+footer ul {
+    float: right;
+    display: table;
+}
+
+footer ul li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.espacoLinks {
+    display: flex;
+    justify-content: space-between;
+}
