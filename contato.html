@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/portfolio.ico" type="image/x-icon" alt="criado por NetScript">
     <title>CONTATOS</title>
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -40,38 +41,29 @@
         </nav>
 
     </header>
-    <main>
+    <main class="bodyForm">
 
         <!-- -----------------------------REFAZER O FORMULARIO--------------------------------- -->
 
         <!-- formulario -->
-        <form action="https://api.staticforms.xyz/submit" method="post"
-            class="p-5 border-3 align-items-center form-control-sm">
-            <input type="hidden" name="accessKey" value="fcb19441-2cdc-4061-9e90-cd15fdcb1b34">
-            <div class="mb-3 mx-auto">
-                <label for="exampleFormControlInput1" class="form-label">Nome Completo</label>
-                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome" required />
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Endereço de Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" required />
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-                <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="Telefone"
-                    required />
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Digite uma mensagem</label>
-                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
-                    placeholder="Deixe sua mensagem para contato"></textarea>
-            </div>
+        <section>
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="fcb19441-2cdc-4061-9e90-cd15fdcb1b34">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
 
-            <button type="button" class="btn btn-outline-success">Enviar</button>
-        </form>
+
+                <a href="index.html"><button type="button" class="botaoEnviar">Enviar</button></a>
+
+            </form>
+        </section>
 
     </main>
-    <br>
     <footer>
         <footer class="redape">
             <ul class="icones-sociais">
